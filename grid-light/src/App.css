@@ -1,0 +1,35 @@
+.grid {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  border-radius: 16px;
+  justify-self: center;
+  align-self: center;
+}
+
+.unselected-grid {
+  background-color: lightgray;
+}
+
+.selected-grid {
+  background-color: green
+}
+
+.grid-container {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
