@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 
 const ScheduleTimer = () => {
-  const endDate = "2026-03-19T12:00:00";
+  const endDate = "2026-06-13T12:00:00";
   const endTime = new Date(endDate).getTime();
   const timerIntervalRef = useRef(null);
   const [currentTimer, setCurrentTimer] = useState({

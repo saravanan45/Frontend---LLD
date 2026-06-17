@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import './App.css'
 
 import PollWidget from './components/PollWidget'

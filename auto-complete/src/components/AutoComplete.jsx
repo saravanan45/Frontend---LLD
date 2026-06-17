@@ -2,8 +2,15 @@ import AutoCompleteSuggestions from "./AutoCompleteSuggestions.jsx";
 import useAutoCompleteHook from "./useAutoCompleteHook.jsx";
 
 const AutoComplete = () => {
-  
-    const {searchValue, handleSearchChange, recipes, handleInputKeyDown, handleSuggestionKeyDown, isLoading, handleRecipeSelect} = useAutoCompleteHook();
+  const {
+    searchValue,
+    handleSearchChange,
+    recipes,
+    handleInputKeyDown,
+    handleSuggestionKeyDown,
+    isLoading,
+    handleRecipeSelect,
+  } = useAutoCompleteHook();
   return (
     <>
       <div>AutoComplete Component</div>
@@ -16,7 +23,13 @@ const AutoComplete = () => {
         style={{ width: "300px", padding: "8px", fontSize: "16px" }}
         onKeyDown={handleInputKeyDown}
       />
-      <AutoCompleteSuggestions searchValue={searchValue} recipes={recipes} handleSuggestionKeyDown={handleSuggestionKeyDown} isLoading={isLoading} handleRecipeSelect={handleRecipeSelect} />
+      <AutoCompleteSuggestions
+        searchValue={searchValue}
+        recipes={recipes}
+        handleSuggestionKeyDown={handleSuggestionKeyDown}
+        isLoading={isLoading}
+        handleRecipeSelect={handleRecipeSelect}
+      />
     </>
   );
 };
